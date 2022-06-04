@@ -3,6 +3,15 @@ const app = express()
 
 app.get('/', function (req, res) {
   res.json({
+    type: 'get',
+    number: 1,
+    nama: 'Audya Ramanda Putra',
+    npm: '2042017'
+  });
+})
+app.post('/', function (req, res) {
+  res.json({
+    type: 'post',
     number: 1,
     nama: 'Audya Ramanda Putra',
     npm: '2042017'
